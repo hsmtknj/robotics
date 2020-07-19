@@ -1,7 +1,7 @@
 # Linear Kalman Filter
 
-## NOTE
-この README.md だと文中の数式が見にくいので，同階層の「README.pdf」を参照された方が見やすいかもしれません．
+## Note
+この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf](https://github.com/hsmtknj/robotics/blob/master/Linear_Kalman_Filter/README.pdf) 」を参照された方が見やすいかもしれません．
 
 # はじめに
 
