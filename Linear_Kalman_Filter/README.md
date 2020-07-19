@@ -1,5 +1,8 @@
 # Linear Kalman Filter
 
+## NOTE
+この README.md だと文中の数式が見にくいので，同階層の「README.pdf」を参照された方が見やすいかもしれません．
+
 # はじめに
 
 カルマンフィルタは[ ルドルフ・カルマン ( Rudolf Emil Kalma ) ](https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%89%E3%83%AB%E3%83%95%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%9E%E3%83%B3)によって提唱されたフィルタで，**時々刻々と変化する量 (物体の位置とか速度とか)** を推定するときに用いられます．
