@@ -1,0 +1,79 @@
+\documentclass{jarticle}
+\begin{document}
+
+% eq1
+状態方程式
+$$
+x_{t/t-1} = Fx_{t-1/t-1} + Gu_{t-1}
+$$
+
+% eq2
+観測方程式
+$$
+z_{t/t-1} = Hx_{t/t-1}
+$$
+
+% eq7
+$$
+R_{t/t-1} = H^2 P_{t/t-1}
+$$
+
+% eq3
+$x_{t}$ の分散共分散行列
+\begin{eqnarray}
+P_{t/t-1}
+&=& E[\Delta x^2_{t/t-1}] \nonumber \\
+&=& E[(F\Delta x_{t-1/t-1} + G\Delta u_{t-1})^2] \nonumber \\
+&=& F^2 E[\Delta x_{t-1/t-1}^2] + 2 E[F \Delta x_{t-1/t-1} G \Delta u_{t-1}] + G^2 E[\Delta u_{t-1}^2] \nonumber \\
+&=& F^2 E[\Delta x_{t-1/t-1}^2] + G^2 E[\Delta u_{t-1}^2] \nonumber \\
+&=& F^2 P_{t-1/t-1} + G^2 Q_{t-1} \nonumber
+\end{eqnarray}
+
+% eq4
+計測更新
+$$
+z_{t/t} = w_{1} z_{t/t-1} + w_{2} z_{t}
+$$
+
+% eq5
+計測更新: 分散
+\begin{eqnarray}
+\sigma^2
+&=& E[\Delta z_{t/t}^2] \nonumber \\
+&=& w_{1}^2 R_{t/t-1} + w_{2}^2 R_{t} \nonumber
+\end{eqnarray}
+
+% eq6
+最小分散推定
+$$
+\frac{\partial \sigma^2}{\partial w_{1}} = \frac{\partial }{\partial w_{1}} \{ w_{1}^2 R_{t/t-1} + (1 - w_{1})^2 R_{t} \} = 0 \nonumber \\
+$$
+
+$$
+w_{1} = \frac{R_{t}}{R_{t/t-1} + R_{t}},\ w_{2} = \frac{R_{t/t-1}}{P_{t/t-1} + R_{t}}
+$$
+
+% eq8
+計測更新: 状態の更新
+\begin{eqnarray}
+z_{t/t}
+&=& w_{1} z_{t/t-1} + w_{2} z_{t} \nonumber \\
+&=& \frac{R_{t}}{R_{t/t-1} + R_{t}} z_{t/t-1} + \frac{R_{t/t-1}}{R_{t/t-1} + R_{t}} z_{t} \nonumber \\
+&=& z_{t/t-1} + \frac{R_{t/t-1}}{R_{t/t-1} + R_{t}} (z_{t} - z_{t/t-1}) \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}
+H x_{t/t} &=& H x_{t/t-1} + \frac{H^2 P_{t/t-1}}{H^2 P_{t/t-1} + R_{t}} (z_{t} - z_{t/t-1}) \nonumber \\
+x_{t/t} &=& x_{t/t-1} + \frac{H P_{t/t-1}}{H^2 P_{t/t-1} + R_{t}} (z_{t} - z_{t/t-1}) \nonumber
+\end{eqnarray}
+
+% eq9
+カルマンフィルタ: 計測更新
+\begin{eqnarray}
+\tilde{z} &=& z_{t} - z_{t/t-1} \nonumber \\
+S &=& H^2 P_{t/t-1} + R_{t} \nonumber \\
+K &=& H P_{t/t-1} S^{-1} \nonumber
+\end{eqnarray}
+
+
+\end{document}

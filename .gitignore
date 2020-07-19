@@ -1,0 +1,7 @@
+#* General *#
+/.DS_Store
+
+#* Linear Kalman Filter *#
+Linear_Kalman_Filter/.DS_Store
+Linear_Kalman_Filter/.ipynb_checkpoints/
+Linear_Kalman_Filter/assets/.DS_Store
