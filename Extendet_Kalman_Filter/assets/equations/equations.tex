@@ -1,0 +1,96 @@
+\documentclass{jarticle}
+\begin{document}
+
+% eq1
+線形性
+\begin{enumerate}
+    \item $f(cx) = c f(x)$
+    \item $f(a + a) = f(a) + f(b)$
+\end{enumerate}
+
+
+% eq4
+ヤコビアン
+\[
+  J = \left(
+    \begin{array}{cccc}
+      \frac{\partial y_{1}}{\partial x_{1}} & \frac{\partial y_{1}}{\partial x_{2}} & \ldots & \frac{\partial y_{1}}{\partial x_{n}} \\
+      \frac{\partial y_{2}}{\partial x_{1}} & \frac{\partial y_{2}}{\partial x_{2}} & \ldots & \frac{\partial y_{2}}{\partial x_{n}} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \frac{\partial y_{m}}{\partial x_{1}} & \frac{\partial y_{m}}{\partial x_{2}} & \ldots & \frac{\partial y_{m}}{\partial x_{n}}
+    \end{array}
+  \right)
+\]
+
+
+% eq5
+非線形状態方程式
+$$
+x_{t/t-1} = f(x_{t-1/t-1}, u_{t-1})
+$$
+
+% eq6
+非線形観測方程式
+$$
+z_{t/t-1} = h(x_{t/t-1})
+$$
+
+% eq7
+状態方程式 (推定誤差)
+$$
+\Delta x_{t/t-1} = F \Delta x_{t-1/t-1} + G \Delta u_{t-1}
+$$
+
+% eq8
+観測方程式 (観測誤差)
+$$
+\Delta z_{t/t-1} = H \Delta x_{t/t-1}
+$$
+
+
+% eq9
+\begin{eqnarray}
+f(x) &\simeq& f(x_0) + J(x) (x-x_0) \nonumber \\
+f(x) - f(x_0) &\simeq& J(x) (x-x_0) \nonumber \\
+\Delta y &=& J(x) \Delta x \nonumber
+\end{eqnarray}
+
+
+% eq10
+ヤコビアン
+\[
+  F = \left(
+    \begin{array}{cccc}
+      \frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} & \ldots & \frac{\partial f_{1}}{\partial x_{n}} \\
+      \frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} & \ldots & \frac{\partial f_{2}}{\partial x_{n}} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \frac{\partial f_{n}}{\partial x_{1}} & \frac{\partial f_{n}}{\partial x_{2}} & \ldots & \frac{\partial f_{n}}{\partial x_{n}}
+    \end{array}
+  \right)
+\]
+
+% eq11
+\[
+  G = \left(
+    \begin{array}{cccc}
+      \frac{\partial f_{1}}{\partial u_{1}} & \frac{\partial f_{1}}{\partial u_{2}} & \ldots & \frac{\partial f_{1}}{\partial u_{m}} \\
+      \frac{\partial f_{2}}{\partial u_{1}} & \frac{\partial f_{2}}{\partial u_{2}} & \ldots & \frac{\partial f_{2}}{\partial u_{m}} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \frac{\partial f_{n}}{\partial u_{1}} & \frac{\partial f_{n}}{\partial u_{2}} & \ldots & \frac{\partial f_{n}}{\partial u_{m}}
+    \end{array}
+  \right)
+\]
+
+% eq12
+\[
+  H = \left(
+    \begin{array}{cccc}
+      \frac{\partial h_{1}}{\partial x_{1}} & \frac{\partial h_{1}}{\partial x_{2}} & \ldots & \frac{\partial h_{1}}{\partial x_{n}} \\
+      \frac{\partial h_{2}}{\partial x_{1}} & \frac{\partial h_{2}}{\partial x_{2}} & \ldots & \frac{\partial h_{2}}{\partial x_{n}} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \frac{\partial h_{n}}{\partial x_{1}} & \frac{\partial h_{n}}{\partial x_{2}} & \ldots & \frac{\partial h_{n}}{\partial x_{n}}
+    \end{array}
+  \right)
+\]
+
+\end{document}

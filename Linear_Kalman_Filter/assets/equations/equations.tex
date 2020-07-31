@@ -15,7 +15,7 @@ $$
 
 % eq7
 $$
-R_{t/t-1} = H^2 P_{t/t-1}
+R_{t/t-1} = H P_{t/t-1} H^T
 $$
 
 % eq3
@@ -50,7 +50,7 @@ $$
 $$
 
 $$
-w_{1} = \frac{R_{t}}{R_{t/t-1} + R_{t}},\ w_{2} = \frac{R_{t/t-1}}{P_{t/t-1} + R_{t}}
+w_{1} = \frac{R_{t}}{R_{t/t-1} + R_{t}},\ w_{2} = \frac{R_{t/t-1}}{R_{t/t-1} + R_{t}}
 $$
 
 % eq8
@@ -63,8 +63,8 @@ z_{t/t}
 \end{eqnarray}
 
 \begin{eqnarray}
-H x_{t/t} &=& H x_{t/t-1} + \frac{H^2 P_{t/t-1}}{H^2 P_{t/t-1} + R_{t}} (z_{t} - z_{t/t-1}) \nonumber \\
-x_{t/t} &=& x_{t/t-1} + \frac{H P_{t/t-1}}{H^2 P_{t/t-1} + R_{t}} (z_{t} - z_{t/t-1}) \nonumber
+H x_{t/t} &=& H x_{t/t-1} + \frac{H P_{t/t-1} H^T}{H P_{t/t-1} H^T + R_{t}} (z_{t} - z_{t/t-1}) \nonumber \\
+x_{t/t} &=& x_{t/t-1} + \frac{P_{t/t-1} H^T}{H P_{t/t-1} H^T + R_{t}} (z_{t} - z_{t/t-1}) \nonumber
 \end{eqnarray}
 
 % eq9
