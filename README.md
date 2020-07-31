@@ -1,12 +1,12 @@
 # ROBOTICS
 
-このリポジトリではロボティクスに関する技術について，得た知識を実装を交えて備忘録として残していきます．
+このリポジトリではロボティクス関連の技術に関する記事を書いていきます．
 
 # Table of Contens
 
-- Kalman Filter : カルマンフィルタ
-    - [Linear Kalman Filter (LKF) ](https://github.com/hsmtknj/robotics/tree/master/Linear_Kalman_Filter) : 線形カルマンフィルタ
-    - Extended Kalman Filter (EKF) : 拡張カルマンフィルタ
-    - Unscented Kalman Filter (UKF) : アンセンテッドカルマンフィルタ
-    - Ensemble Kalman Filter (EnKF) : アンサンブルカルマンフィルタ
-- Particle Filter : パーティクルフィルタ
+- カルマンフィルタ: Kalman Filter
+    - [線形カルマンフィルタ](https://github.com/hsmtknj/robotics/tree/master/Linear_Kalman_Filter) : Linear Kalman Filter (LKF)
+    - 拡張カルマンフィルタ : Extended Kalman Filter (EKF)
+    - アンセンテッドカルマンフィルタ : Unscented Kalman Filter (UKF)
+    - アンサンブルカルマンフィルタ : Ensemble Kalman Filter (EnKF)
+- パーティクルフィルタ : Particle Filter
