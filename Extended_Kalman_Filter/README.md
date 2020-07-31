@@ -1,5 +1,8 @@
 # 拡張カルマンフィルタ : Extended Kalman Filter (EKF)
 
+## Note
+この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf]() 」を参照された方が見やすいかもしれません．
+
 # はじめに
 
 線形カルマンフィルタでは状態方程式や観測方程式を立てて次状態を予測し，センサなどの観測値から隠れ状態を推定しました．
@@ -139,4 +142,4 @@ Fig.1 のように **オレンジの範囲では青線は赤線みたいに直�
 
 # 拡張カルマンフィルタの実装例
 
-main.ipynb を参照ください．
+[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/Extendet_Kalman_Filter/main.ipynb) を参照ください．

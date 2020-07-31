@@ -2,11 +2,11 @@
 /.DS_Store
 
 #* Linear Kalman Filter *#
-Linear_Kalman_Filter/.DS_Store
-Linear_Kalman_Filter/.ipynb_checkpoints/
-Linear_Kalman_Filter/assets/.DS_Store
+/Linear_Kalman_Filter/.DS_Store
+/Linear_Kalman_Filter/.ipynb_checkpoints/
+/Linear_Kalman_Filter/assets/.DS_Store
 
 #* Extended Kalman Filter *#
-Extended_Kalman_Filter/.DS_Store
-Extended_Kalman_Filter/.ipynb_checkpoints/
-Extended_Kalman_Filter/assets/.DS_Store
+/Extended_Kalman_Filter/.DS_Store
+/Extended_Kalman_Filter/.ipynb_checkpoints/
+/Extended_Kalman_Filter/assets/.DS_Store
