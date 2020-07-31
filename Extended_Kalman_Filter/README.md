@@ -1,7 +1,7 @@
 # 拡張カルマンフィルタ : Extended Kalman Filter (EKF)
 
 ## Note
-この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf]() 」を参照された方が見やすいかもしれません．
+この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf](https://github.com/hsmtknj/robotics/blob/master/Extended_Kalman_Filter/README.pdf) 」を参照された方が見やすいかもしれません．
 
 # はじめに
 
@@ -142,4 +142,4 @@ Fig.1 のように **オレンジの範囲では青線は赤線みたいに直�
 
 # 拡張カルマンフィルタの実装例
 
-[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/Extendet_Kalman_Filter/main.ipynb) を参照ください．
+[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/Extended_Kalman_Filter/main.ipynb) を参照ください．
