@@ -1,12 +1,23 @@
 #* General *#
 /.DS_Store
+/articles/.DS_Store
 
 #* Linear Kalman Filter *#
-/Linear_Kalman_Filter/.DS_Store
-/Linear_Kalman_Filter/.ipynb_checkpoints/
-/Linear_Kalman_Filter/assets/.DS_Store
+/articles/Linear_Kalman_Filter/.DS_Store
+/articles/Linear_Kalman_Filter/.ipynb_checkpoints/
+/articles/Linear_Kalman_Filter/assets/.DS_Store
 
 #* Extended Kalman Filter *#
-/Extended_Kalman_Filter/.DS_Store
-/Extended_Kalman_Filter/.ipynb_checkpoints/
-/Extended_Kalman_Filter/assets/.DS_Store
+/articles/Extended_Kalman_Filter/.DS_Store
+/articles/Extended_Kalman_Filter/.ipynb_checkpoints/
+/articles/Extended_Kalman_Filter/assets/.DS_Store
+
+#* Error Ellipse *#
+/articles/Error_Ellipse/.DS_Store
+/articles/Error_Ellipse/.ipynb_checkpoints/
+/articles/Error_Ellipse/assets/.DS_Store
+
+#* Mahalanobis Distance and Chi-squared Test *#
+/articles/MahalanobisDist_ChiSquaredTest/.DS_Store
+/articles/MahalanobisDist_ChiSquaredTest/.ipynb_checkpoints/
+/articles/MahalanobisDist_ChiSquaredTest/assets/.DS_Store
