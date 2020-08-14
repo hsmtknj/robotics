@@ -1,9 +1,9 @@
 # 誤差楕円を可視化する
 
 ## Note
-この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf]()」を参照された方が見やすいかもしれません．
+この README.md だと文中の数式が見にくいので，同階層の [README.pdf](https://github.com/hsmtknj/robotics/blob/master/articles/Error_Ellipse/README.pdf) を参照された方が見やすいかもしれません．
 
-# はしめに
+# はじめに
 
 カルマンフィルタなどを実装していると，分散が本当に小さくなっているのか，またどのように小さくなっていくのか確認したくなるときがあります．
 
@@ -80,4 +80,4 @@ $P$ の $\sigma_{xy}$ の要素が強く影響するので，例えばここを 
 
 # 誤差楕円の実装例
 
-[main.ipynb]() を参照ください．
+[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/articles/Error_Ellipse/main.ipynb) を参照ください．

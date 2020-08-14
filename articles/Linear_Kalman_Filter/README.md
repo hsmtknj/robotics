@@ -1,7 +1,7 @@
 # 線形カルマンフィルタ : Linear Kalman Filter (LKF)
 
 ## Note
-この README.md だと文中の数式が見にくいので，同階層の「 [README.pdf](https://github.com/hsmtknj/robotics/blob/master/Linear_Kalman_Filter/README.pdf) 」を参照された方が見やすいかもしれません．
+この README.md だと文中の数式が見にくいので，同階層の [README.pdf](https://github.com/hsmtknj/robotics/blob/master/articles/Linear_Kalman_Filter/README.pdf) を参照された方が見やすいかもしれません．
 
 # はじめに
 
@@ -190,4 +190,4 @@ $E[ ]$は期待値を求める関数です．カルマンフィルタでは，$x
 
 # カルマンフィルタの実装例
 
-[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/Linear_Kalman_Filter/main.ipynb) を参照ください．
+[main.ipynb](https://github.com/hsmtknj/robotics/blob/master/articles/Linear_Kalman_Filter/main.ipynb) を参照ください．
